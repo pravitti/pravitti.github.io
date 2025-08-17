@@ -18,7 +18,7 @@ export default function Home() {
         {/* Intro row */}
         <div className="intro-content grid place-items-center text-[13pt] text-center max-w-prose mx-auto">
           Pravitti is about effort, learning, and progress. <br /> <br />
-          What exactly is 'Pravitti'? <br/>It is a theme and a way of thinking. The word
+          What exactly is {"'"}Pravitti{"'"}? <br/>It is a theme and a way of thinking. The word
           stands for positivity, mindfulness, and an effort-based approach to life. It
           reminds us that progress is not about sudden change, but about small, steady
           actions that add up to something meaningful. <br /><br />
