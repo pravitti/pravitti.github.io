@@ -130,23 +130,20 @@ export default function App() {
             className="video-content relative border border-black flex-1 flex items-center justify-center min-h-0 overflow-hidden bg-black cursor-pointer"
             onClick={handleClick}
           >
-            <video
-              src="/videos/Digital_Transformation_in_Southeast_Asia.mp4"
-              controls
-              playsInline
-              className="w-full h-full object-contain"
-              onClick={(e) => e.stopPropagation()}
-            />
-
-            <a
-              href={YOUTUBE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-3 right-3 px-3 py-1 rounded text-sm bg-red-600 text-white shadow hover:opacity-90"
-              onClick={(e) => e.stopPropagation()}
-            >
-              Watch on YouTube!
-            </a>
+            {/* Responsive YouTube Embed */}
+            <div className="relative w-full aspect-video">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
           </div>
 
           {/* Games */}
